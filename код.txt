@@ -1,0 +1,30 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        
+        Console.WriteLine("Введите ваше имя:");
+        string имя = Console.ReadLine();
+
+        Console.WriteLine("Введите вашу фамилию:");
+        string фамилия = Console.ReadLine();
+
+        Console.WriteLine("Введите ваш возраст:");
+        int возраст = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Введите ваш рост в сантиметрах:");
+        int рост = Convert.ToInt32(Console.ReadLine());
+        
+        
+        string информация = "Имя: " + имя + ", Фамилия: " + фамилия + ", Возраст: " + возраст + ", Рост: " + рост + " см";
+        
+
+        
+        Console.WriteLine("Анкета:");
+        Console.WriteLine("Имя: {0}, Фамилия: {1}, Возраст: {2}, Рост: {3} см", имя, фамилия, возраст, рост);
+
+        Console.ReadLine();
+    }
+}
